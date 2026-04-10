@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "tesla-mcp": {
+      "url": "https://mcp.myteslamate.com/mcp"
+    }
+  }
+}

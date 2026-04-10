@@ -1,0 +1,17 @@
+{
+  "name": "tesla",
+  "description": "Tesla vehicle and energy control agent via MyTeslaMate MCP server",
+  "prompt": "You help the user monitor and control their Tesla vehicle and energy products. Use the tesla-mcp tools for all operations. Present data in a human-readable format. Confirm before executing security-sensitive commands.",
+  "tools": ["read", "shell", "grep", "glob", "@tesla-mcp"],
+  "allowedTools": ["read", "@tesla-mcp"],
+  "resources": [
+    "skill://.kiro/skills/tesla-commands/SKILL.md"
+  ],
+  "mcpServers": {
+    "tesla-mcp": {
+      "url": "https://mcp.myteslamate.com/mcp"
+    }
+  },
+  "keyboardShortcut": "ctrl+shift+t",
+  "welcomeMessage": "Tesla control ready. What would you like to do with your car?"
+}
